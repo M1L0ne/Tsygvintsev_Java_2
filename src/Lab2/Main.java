@@ -1,5 +1,6 @@
 package Lab2;
 
+import java.util.List;
 import java.util.Scanner;
 
 public class Main {
@@ -26,6 +27,26 @@ public class Main {
                 System.out.println(human3);
                 break;
             case 3:
+                Department department = new Department("IT");
+                Employee employee1 = new Employee("Петров", department);
+                Employee employee2 = new Employee("Козлова", department);
+                Employee employee3 = new Employee("Сидоров", department);
+
+                department.setHead(employee2);
+
+                System.out.println(employee1);
+                System.out.println(employee2);
+                System.out.println(employee3);
+                break;
+            case 4:
+                Department HR = new Department("HR");
+                Employee HR1 = new Employee("Цыгвинцев", HR);
+                Employee HR2 = new Employee("Дроздов", HR);
+
+                HR.setHead(HR1);
+
+                List<Employee> employees = HR.getEmployees();
+                System.out.println(employees);
 
         }
     }
