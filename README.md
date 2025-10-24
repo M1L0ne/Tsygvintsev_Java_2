@@ -290,18 +290,18 @@
 вывелся	“Бах!”) количество	патронов	уменьшается	на	один.
 Создайте	пистолет	с	тремя	патронами	и	выстрелите	из	него	пять	раз.	
 ### Алгоритм решения
-  package Lab2;
-  
-  public class Gun {
+    package Lab2;
+    
+    public class Gun {
       private int bullets;
-  
+    
       public Gun(int bullets) {
           this.bullets = bullets;
       }
       public Gun() {
           this.bullets = 5;
       }
-  
+    
       public void fire() {
           if (bullets > 0) {
               bullets--;
@@ -311,4 +311,4 @@
               System.out.println("Клац!");
           }
       }
-  }
+    }
