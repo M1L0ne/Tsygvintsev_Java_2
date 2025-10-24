@@ -1,4 +1,4 @@
-package Lab2;
+package lab2;
 
 public class Employee {
     private String name;
@@ -18,7 +18,7 @@ public class Employee {
         return name + " работает в отделе " + departmentName + ", начальник которого " + head;
     }
 
-    public String getName(){
+    public String getName() {
         return name;
     }
 }

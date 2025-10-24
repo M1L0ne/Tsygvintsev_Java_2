@@ -1,4 +1,4 @@
-package Lab2;
+package lab2;
 
 import java.util.InputMismatchException;
 import java.util.List;
@@ -41,13 +41,13 @@ public class Main {
                     System.out.println(employee3);
                     break;
                 case 4:
-                    Department HR = new Department("HR");
-                    Employee HR1 = new Employee("Цыгвинцев", HR);
-                    Employee HR2 = new Employee("Дроздов", HR);
+                    Department hr = new Department("HR");
+                    Employee hr1 = new Employee("Цыгвинцев", hr);
+                    Employee hr2 = new Employee("Дроздов", hr);
 
-                    HR.setHead(HR1);
+                    hr.setHead(hr1);
 
-                    List<Employee> employees = HR.getEmployees();
+                    List<Employee> employees = hr.getEmployees();
                     System.out.println(employees);
                     break;
                 case 5:

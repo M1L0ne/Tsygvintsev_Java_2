@@ -1,4 +1,4 @@
-package Lab2;
+package lab2;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -13,26 +13,26 @@ public class Department {
         this.employees = new ArrayList<Employee>();
     }
 
-    public void setHead(Employee employee){
+    public void setHead(Employee employee) {
         head = employee;
     }
 
-    public String getHead(){
-        if (head == null){
+    public String getHead() {
+        if (head == null) {
             return "неизвестен";
         }
         return head.getName();
     }
 
-    public String getName(){
+    public String getName() {
         return name;
     }
 
-    public void addEmployee(Employee employee){
+    public void addEmployee(Employee employee) {
         employees.add(employee);
     }
 
-    public List<Employee> getEmployees(){
+    public List<Employee> getEmployees() {
         return employees;
     }
 }

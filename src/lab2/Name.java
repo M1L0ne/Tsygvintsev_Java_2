@@ -1,4 +1,4 @@
-package Lab2;
+package lab2;
 
 public class Name {
     private String lastName;

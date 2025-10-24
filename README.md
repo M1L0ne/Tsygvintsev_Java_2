@@ -15,7 +15,7 @@
 • Маяковский	Владимир
 Обратите	 внимание,
 ### Алгоритм решения
-    package Lab2;
+    package lab2;
     
     public class Name {
         private String lastName;
@@ -57,20 +57,19 @@
 • Человек	с	именем	“Пушкин ”	и	ростом	167
 • Человек	с	именем	“Владимир ”	и	ростом	189
 ### Алгоритм решения
-    package Lab2;
+    package lab2;
     
     public class Human {
         private String name;
         private int height;
     
-        public Human (String name, int height){
+        public Human (String name, int height) {
             this.name = name;
             this.height = height;
         }
     
         @Override
-        public String toString()
-        {
+        public String toString() {
             return name + ", рост: " + height;
         }
     }
@@ -89,7 +88,7 @@
 2. Сделать	Козлова	начальником	IT отдела.
 3. Вывести	на	экран	текстовое	представление	
 ### Алгоритм решения
-    package Lab2;
+    package lab2;
     
     import java.util.ArrayList;
     import java.util.List;
@@ -104,31 +103,31 @@
             this.employees = new ArrayList<Employee>();
         }
     
-        public void setHead(Employee employee){
+        public void setHead(Employee employee) {
             head = employee;
         }
     
-        public String getHead(){
+        public String getHead() {
             if (head == null){
                 return "неизвестен";
             }
             return head.getName();
         }
     
-        public String getName(){
+        public String getName() {
             return name;
         }
     
-        public void addEmployee(Employee employee){
+        public void addEmployee(Employee employee) {
             employees.add(employee);
         }
     
-        public List<Employee> getEmployees(){
+        public List<Employee> getEmployees() {
             return employees;
         }
     }
 
-    package Lab2;
+    package lab2;
 
     public class Employee {
         private String name;
@@ -148,7 +147,7 @@
             return name + " работает в отделе " + departmentName + ", начальник которого " + head;
         }
     
-        public String getName(){
+        public String getName() {
             return name;
         }
     }
@@ -160,7 +159,7 @@
 Измените	 решение,	 полученное	 в	 задаче	2.4 таким	 образом,	 чтобы	 имея	 ссылку	 на	 сотрудника,	
 можно	было	бы	узнать	список	всех	сотрудников	этого	отдела.
 ### Алгоритм решения
-    package Lab2;
+    package lab2;
     
     import java.util.ArrayList;
     import java.util.List;
@@ -179,7 +178,7 @@
             head = employee;
         }
     
-        public String getHead(){
+        public String getHead() {
             if (head == null){
                 return "неизвестен";
             }
@@ -190,16 +189,16 @@
             return name;
         }
     
-        public void addEmployee(Employee employee){
+        public void addEmployee(Employee employee) {
             employees.add(employee);
         }
     
-        public List<Employee> getEmployees(){
+        public List<Employee> getEmployees() {
             return employees;
         }
     }
     
-    package Lab2;
+    package lab2;
 
     public class Employee {
         private String name;
@@ -219,7 +218,7 @@
             return name + " работает в отделе " + departmentName + ", начальник которого " + head;
         }
     
-        public String getName(){
+        public String getName() {
             return name;
         }
     }
@@ -238,18 +237,18 @@
 3. Владимир	Маяковский
 4. Христофор	Бонифатьевич	(здесь	Христофор	это	имя,	а	Бонифатьевич	- фамилия)	
 ### Алгоритм решения
-    package Lab2;
+    package lab2;
     
     public class Names {
         private String lastName;
         private String firstName;
         private String patronymic;
     
-        public Names(String firstName){
+        public Names(String firstName) {
             this.firstName = firstName;
         }
     
-        public Names(String firstName, String lastName){
+        public Names(String firstName, String lastName) {
             this.firstName = firstName;
             this.lastName = lastName;
         }
@@ -290,7 +289,7 @@
 вывелся	“Бах!”) количество	патронов	уменьшается	на	один.
 Создайте	пистолет	с	тремя	патронами	и	выстрелите	из	него	пять	раз.	
 ### Алгоритм решения
-    package Lab2;
+    package lab2;
     
     public class Gun {
       private int bullets;

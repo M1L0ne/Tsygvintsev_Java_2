@@ -1,15 +1,15 @@
-package Lab2;
+package lab2;
 
 public class Names {
     private String lastName;
     private String firstName;
     private String patronymic;
 
-    public Names(String firstName){
+    public Names(String firstName) {
         this.firstName = firstName;
     }
 
-    public Names(String firstName, String lastName){
+    public Names(String firstName, String lastName) {
         this.firstName = firstName;
         this.lastName = lastName;
     }
