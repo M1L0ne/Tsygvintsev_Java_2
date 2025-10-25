@@ -30,13 +30,13 @@
     
         @Override
         public String toString() {
-            if (lastName == null){
+            if (lastName == null) {
                 lastName = "";
             }
-            if (firstName == null){
+            if (firstName == null) {
                 firstName = "";
             }
-            if (patronymic == null){
+            if (patronymic == null) {
                 patronymic = "";
             }
     
@@ -96,11 +96,9 @@
     public class Department {
         private String name;
         private Employee head;
-        private List<Employee> employees;
     
         public Department(String name) {
             this.name = name;
-            this.employees = new ArrayList<Employee>();
         }
     
         public void setHead(Employee employee) {
@@ -108,7 +106,7 @@
         }
     
         public String getHead() {
-            if (head == null){
+            if (head == null) {
                 return "неизвестен";
             }
             return head.getName();
@@ -117,18 +115,11 @@
         public String getName() {
             return name;
         }
-    
-        public void addEmployee(Employee employee) {
-            employees.add(employee);
-        }
-    
-        public List<Employee> getEmployees() {
-            return employees;
-        }
     }
-
+    
+    
     package lab2;
-
+    
     public class Employee {
         private String name;
         private Department department;
@@ -136,7 +127,6 @@
         public Employee(String name, Department department) {
             this.name = name;
             this.department = department;
-            department.addEmployee(this);
         }
     
         @Override
@@ -185,7 +175,7 @@
             return head.getName();
         }
     
-        public String getName(){
+        public String getName() {
             return name;
         }
     
@@ -261,13 +251,13 @@
     
         @Override
         public String toString() {
-            if (lastName == null){
+            if (lastName == null) {
                 lastName = "";
             }
-            if (firstName == null){
+            if (firstName == null) {
                 firstName = "";
             }
-            if (patronymic == null){
+            if (patronymic == null) {
                 patronymic = "";
             }
     
